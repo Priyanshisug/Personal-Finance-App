@@ -1,0 +1,34 @@
+services:
+  mysqldb:
+    image: mysql:latest
+    restart: unless-stopped
+    volumes:
+      - ./mysql:/docker-entrypoint-initdb.d/
+    environment:
+      MYSQL_ROOT_PASSWORD: I5HeAwlhmru658zuLNNlXYgO8RLSZ17cs61yUDV
+      MYSQL_DATABASE: application
+    ports:
+      - 3307:3306
+  backend:
+    depends_on:
+      - mysqldb
+    build: ./backend
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    environment:
+      MYSQL_HOST: mysqldb
+      MYSQL_PASS: I5HeAwlhmru658zuLNNlXYgO8RLSZ17cs61yUDV
+      JWT_SECRET: "ifR?'F9hbg!Wr661^Iy(y!`A7"
+      PORT: 8080
+  # frontend:
+  #   depends_on:
+  #     - mysqldb
+  #     - backend
+  #   build:
+  #     context: ./frontend
+  #     args:
+  #       REACT_APP_API_BASE_PATH: http://localhost:8080/api
+  #   restart: unless-stopped
+  #   ports:
+  #     - 80:80
