@@ -1,0 +1,25 @@
+.pots-page {
+  padding: 40px;
+  width: 300px;
+}
+
+.pots-page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-pot-btn {
+  background: black;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}

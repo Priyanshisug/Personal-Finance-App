@@ -1,0 +1,51 @@
+.transactions-card {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 700px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.transactions-header h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-all {
+  font-size: 14px;
+  color: gray;
+  cursor: pointer;
+}
+
+.transaction-item {
+  margin-top: -5px;
+  display: flex;
+  align-items: center;
+  padding: 2px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transaction-details {
+  flex: 1;
+}
+
+.transaction-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.transaction-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.transaction-amount {
+  font-size: 16px;
+  font-weight: bold;
+}

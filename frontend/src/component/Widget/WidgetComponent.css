@@ -1,0 +1,30 @@
+.widget {
+  padding: 0px 40px 10px 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: start;
+  transition: transform 0.2s ease-in-out;
+}
+
+.widget:hover {
+  transform: translateY(-5px);
+  background-color: #090404;
+}
+
+.widget-heading {
+  font-size: 26px;
+  color: #110606;
+}
+
+.widget-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #090404;
+}
+
+.widget:hover .widget-heading,
+.widget:hover .widget-value {
+  color: white;
+}
+

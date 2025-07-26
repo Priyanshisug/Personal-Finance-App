@@ -1,0 +1,45 @@
+.overview-container {  
+  display: flex;
+  justify-content:flex-start; 
+  gap: 80px; 
+  padding: 50px;
+  height: 20vh;
+  margin-top: 5px;
+}
+.heading{
+    font-size: 32px;
+    font-style: bold;
+}
+
+.overview-pots {
+  margin-top: 2px;
+  margin-left: 50px;
+}
+
+.overview-pots-budget{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overview-transaction-bills{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overview-Budget{
+  margin-top: 2px;
+  margin-right: 100px;
+}
+
+.overview-transaction{
+   margin-top: -150px;
+   margin-left: 50px;
+   width: 700px;
+}
+
+.overview-bills{
+  margin-top: 40px;
+  margin-right: 100px;
+}

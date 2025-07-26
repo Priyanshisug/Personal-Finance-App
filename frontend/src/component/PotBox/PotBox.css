@@ -1,0 +1,55 @@
+.potbox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.potbox h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.potbox h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.progress-track {
+  height: 6px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 6px;
+  transition: width 0.3s;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.potbox-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.potbox-actions button {
+  flex: 1;
+  padding: 8px 0;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  border-radius: 6px;
+  cursor: pointer;
+}
